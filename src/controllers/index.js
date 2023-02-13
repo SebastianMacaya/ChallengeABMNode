@@ -1,0 +1,1 @@
+export * as clienteController from "./cliente.controllers.js";
