@@ -26,4 +26,9 @@ npm run dev
 
 ```
 
-## Probar los Endpoints con el archivo #ChallengeIntuit.postman_collection.json
+## Probar  Endpoints LOCALMENTE  importando el  archivo #ChallengeIntuit.postman_collection.json en POSTMAN
+
+
+
+## Probar  Endpoints en el link DEPLOY  importando el  archivo #ChallengeIntuit online.postman_collection en POSTMAN
+deploy : https://abm-clientes.onrender.com/api/
