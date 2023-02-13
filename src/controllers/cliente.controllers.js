@@ -10,14 +10,14 @@ export const getCliente = async (req, res) => {
         if (cliente) {
             res.status(200).send({ cliente });
         } else {
-            res.send("el cliente que busco no existe");
+            rres.status(404).send("el cliente que busco no existe");
         }
     } else {
         try {
             const cliente = await clienteServices.getClientes();
             res.status(200).send(cliente);
         } catch (error) {
-            console.log(error);
+            res.status(500).send(error.message);
         }
     }
 };
@@ -30,7 +30,7 @@ export const saveCliente = async (req, res) => {
         const cliente = await clienteServices.createCliente(newCliente);
         res.send('cliente creado con exito :' + cliente);
     } catch (error) {
-        console.log(error);
+        res.status(500).send(error.message);
     }
 };
 
@@ -41,7 +41,7 @@ export const deleteCliente = async (req, res) => {
         if (borrado) {
             res.status(200).send({ borrado });
         } else {
-            res.send("el cliente no cliente existe");
+            res.status(404).send("el cliente no  existe con ese id");
         }
     } catch (error) {
         console.log(error);
@@ -61,7 +61,7 @@ export const updateCliente = async (req, res) => {
 
         res.status(200).send(modificado);
     } catch (error) {
-        console.log(error);
+        res.status(500).send(error.message);
     }
 };
 
