@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "d0d86347-1756-4f8a-90f6-afe47d4488c4",
+		"name": "ChallengeIntuit online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16991869"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://abm-clientes.onrender.com/api/cliente/",
+					"protocol": "https",
+					"host": [
+						"abm-clientes",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://abm-clientes.onrender.com/api/cliente/?id",
+					"protocol": "https",
+					"host": [
+						"abm-clientes",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cliente",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clienteId\": \"123456\",\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Pérez\",\r\n    \"fechaNacimiento\": \"1980-01-01T00:00:00.000Z\",\r\n    \"cuit\": \"20-12345678-0\",\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"telefono\": \"555-1234\",\r\n    \"email\": \"juan.perez@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://abm-clientes.onrender.com/api/cliente",
+					"protocol": "https",
+					"host": [
+						"abm-clientes",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Nombre Modificado\",\r\n    \"apellido\": \"Pérez\",\r\n    \"fechaNacimiento\": \"1980-01-01T00:00:00.000Z\",\r\n    \"cuit\": \"20-12345678-0\",\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"telefono\": \"555-1234\",\r\n    \"email\": \"juan.perez@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://abm-clientes.onrender.com/api/cliente/63e97ff658c83bfa9f5bfe72",
+					"protocol": "https",
+					"host": [
+						"abm-clientes",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cliente",
+						"63e97ff658c83bfa9f5bfe72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"nombre modificado\",\r\n    \"apellido\": \"apellido modificado\",\r\n    \"fechaNacimiento\": \"1980-01-01T00:00:00.000Z\",\r\n    \"cuit\": \"20-12345678-0\",\r\n    \"direccion\": \"Calle Falsa 123\",\r\n    \"telefono\": \"555-1234\",\r\n    \"email\": \"juan.perez@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://abm-clientes.onrender.com/api/cliente/?id",
+					"protocol": "https",
+					"host": [
+						"abm-clientes",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cliente",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://abm-clientes.onrender.com/api/cliente/nombre/(ingrese el nombre)",
+					"protocol": "https",
+					"host": [
+						"abm-clientes",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"cliente",
+						"nombre",
+						"(ingrese el nombre)"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
