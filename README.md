@@ -1,5 +1,7 @@
 # ChallengeABMNode Intuit
 
+> Proyecto histórico. El despliegue público original fue retirado.
+
 
 Aplicacion  ABM usuarios usando patron de diseño MVC separando responsabilidades
 
@@ -28,10 +30,6 @@ npm run dev
 
 ## Probar  Endpoints LOCALMENTE  importando el  archivo #ChallengeIntuit.postman_collection.json en POSTMAN
 
-
-
-## Probar  Endpoints en el link DEPLOY  importando el  archivo #ChallengeIntuit online.postman_collection en POSTMAN
-deploy : https://abm-clientes.onrender.com/api/
 
 
 ![](demoBack.gif)
